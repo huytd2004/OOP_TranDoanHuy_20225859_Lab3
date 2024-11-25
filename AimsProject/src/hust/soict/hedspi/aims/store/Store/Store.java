@@ -1,3 +1,7 @@
+package hust.soict.hedspi.aims.store.Store;
+
+import hust.soict.hedspi.aims.disc.DigitalVideoDisc.DigitalVideoDisc;
+
 import java.util.LinkedList;
 
 public class Store {

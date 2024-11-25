@@ -1,3 +1,4 @@
+package hust.soict.hedspi.aims.disc.DigitalVideoDisc;
 
 public class DigitalVideoDisc {
     //Khai báo thuộc tính

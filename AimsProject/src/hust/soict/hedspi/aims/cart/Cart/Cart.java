@@ -1,3 +1,6 @@
+package hust.soict.hedspi.aims.cart.Cart;
+
+import hust.soict.hedspi.aims.disc.DigitalVideoDisc.DigitalVideoDisc;
 
 public class Cart {
     public static final int MAX_NUMBERS_ORDERED = 20;   //Số lượng tối đa đĩa DVD trong giỏ hàng
