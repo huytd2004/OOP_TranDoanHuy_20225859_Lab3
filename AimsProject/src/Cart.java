@@ -18,6 +18,40 @@ public class Cart {
             return 1;
         }
     }
+    //Ham them dia vào gio hang theo List voi so luong tuy y
+    public int addDigitalVideoDisc(DigitalVideoDisc... dvdArray) {
+        int addCount = 0;
+        for (DigitalVideoDisc disc : dvdArray) {
+            if (qtyOrdered == MAX_NUMBERS_ORDERED) {
+                System.out.println("The cart is almost full. Can't add more discs");
+                break;
+            } else {
+                itemsOrdered[qtyOrdered] = disc;
+                qtyOrdered++;
+                System.out.println("The DVD " + '\"' + disc.getTitle() + '\"' + " has been added!");
+                addCount++;
+            }
+        }
+        return addCount;
+    }
+    //Ham them 2 dia DVD
+    public int addDigitalVideoDisc(DigitalVideoDisc dvd1, DigitalVideoDisc dvd2) {
+        if (qtyOrdered + 1 >= MAX_NUMBERS_ORDERED) {
+            System.out.println("The cart is almost full. Can't add more discs");
+            return 0;
+        } else {
+            itemsOrdered[qtyOrdered] = dvd1;
+            qtyOrdered++;
+            System.out.println("The DVD " + '\"' + dvd1.getTitle() + '\"' + " has been added!");
+
+            itemsOrdered[qtyOrdered] = dvd2;
+            qtyOrdered++;
+            System.out.println("The DVD " + '\"' + dvd2.getTitle() + '\"' + " has been added!");
+
+            return 2; //Tra ve so dia DVD da them duoc
+        }
+    }
+
 
     //Hàm xoá đĩa (Khi cấu trúc dữ liệu của đĩa DVD là 1 mảng cấu trúc)
     public int removeDigitalVideoDisc(DigitalVideoDisc disc) {
