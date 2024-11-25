@@ -1,3 +1,8 @@
+package hust.soict.hedspi.test.cart.CartTest;
+
+import hust.soict.hedspi.aims.cart.Cart.Cart;
+import hust.soict.hedspi.aims.disc.DigitalVideoDisc.DigitalVideoDisc;
+
 public class CartTest {
     public static void main(String[] args) {
         Cart cart = new Cart();

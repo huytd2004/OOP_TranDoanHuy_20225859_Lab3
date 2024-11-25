@@ -1,3 +1,8 @@
+package hust.soict.hedspi.test.store.StoreTest;
+
+import hust.soict.hedspi.aims.disc.DigitalVideoDisc.DigitalVideoDisc;
+import hust.soict.hedspi.aims.store.Store.Store;
+
 public class StoreTest {
     public static void main(String[] args) {
         Store store = new Store();
