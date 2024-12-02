@@ -1,6 +1,6 @@
 package hust.soict.hedspi.aims.cart.Cart;
 
-import hust.soict.hedspi.aims.disc.DigitalVideoDisc.DigitalVideoDisc;
+import hust.soict.hedspi.aims.media.DigitalVideoDisc;
 
 public class Cart {
     public static final int MAX_NUMBERS_ORDERED = 20;   //Số lượng tối đa đĩa DVD trong giỏ hàng
@@ -46,7 +46,6 @@ public class Cart {
             itemsOrdered[qtyOrdered] = dvd1;
             qtyOrdered++;
             System.out.println("The DVD " + '\"' + dvd1.getTitle() + '\"' + " has been added!");
-
             itemsOrdered[qtyOrdered] = dvd2;
             qtyOrdered++;
             System.out.println("The DVD " + '\"' + dvd2.getTitle() + '\"' + " has been added!");
